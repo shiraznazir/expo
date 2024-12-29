@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #ffffff;
+  --background: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #0a0a0a;
+    --background: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.welcome-left{
+  background-color: #0a0a0a;
+  color: #ffffff;
+  clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.welcome-right{
+  background-color: #0a0a0a;
+  color: #ffffff;
+  clip-path: polygon(0 1%, 100% 0, 100% 100%, 26% 100%);
+}
